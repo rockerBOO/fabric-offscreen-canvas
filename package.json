@@ -39,6 +39,6 @@
 	},
 	"scripts": {
 		"dev": "webpack-dev-server --hot --env=development",
-		"build": "webpack -r esm --env=production"
+		"build": "webpack --env=production"
 	}
 }
