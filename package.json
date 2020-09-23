@@ -5,7 +5,7 @@
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
-		"react-hot-loader": "^4.8.4",
+		"react-hot-loader": "^4.13.0",
 		"styled-components": "^5.2.0",
 		"workbox-routing": "^5.1.4",
 		"workbox-strategies": "^5.1.4"
