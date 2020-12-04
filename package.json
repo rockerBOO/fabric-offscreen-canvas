@@ -7,7 +7,7 @@
 		"react-dom": "^16.14.0",
 		"react-hot-loader": "^4.13.0",
 		"styled-components": "^5.2.1",
-		"workbox-routing": "^6.0.0",
+		"workbox-routing": "^6.0.2",
 		"workbox-strategies": "^6.0.0"
 	},
 	"devDependencies": {
