@@ -9,7 +9,8 @@ const webpackConfig = env => {
 		devtool: env === 'production' ? 'cheap-source-maps' : 'eval',
 		entry: {
 			main: './src/index.js',
-			workbox: './src/workbox.js'
+			workbox: './src/workbox.js',
+			renderer: './src/renderer.js'
 		},
 		module: {
 			rules: [

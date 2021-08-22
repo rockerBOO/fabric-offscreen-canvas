@@ -1,14 +1,24 @@
-# React Starter
+# Offscreen rendering with fabric.js 
 
-React 16.8 starter with StyledComponents 5, Normalize.css 8
-Webpack 4 with React Hot Loader, React Hot Dom, Babel 7, ESLint 5, Stylelint 10, Jest 24
+## Current State: Fixes needed
 
-This is what I currently like to use as a starter mix. Has Workbox added but not implemented. Can be implemented like this in your application.
+## fabric.js fixes required
+
+* Detecting if in browser or node or worker
+* Remove window/document references (not in workers)
+* Send all events that could cause rendering to the worker.
+
+## Install
+
+Designed for yarn.
 
 ```
-if ('serviceWorker' in navigator) {
-	window.addEventListener('load', () => {
-		navigator.serviceWorker.register('/workbox.js')
-	})
-}
+yarn
 ```
+
+## Usage
+
+```
+yarn dev
+```
+
