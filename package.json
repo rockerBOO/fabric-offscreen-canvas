@@ -1,7 +1,7 @@
 {
 	"dependencies": {
 		"@hot-loader/react-dom": "17.0.1",
-		"fabric": "^4.5.1",
+		"fabric": "^4.6.0",
 		"normalize.css": "^8.0.1",
 		"prettier": "2.3.2",
 		"prettier_d_slim": "^1.0.0",
