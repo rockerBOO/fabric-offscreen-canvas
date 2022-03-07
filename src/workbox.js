@@ -1,4 +1,4 @@
-import { registerRoute } from 'workbox-routing/registerRoute.mjs'
-import { StaleWhileRevalidate } from 'workbox-strategies/StaleWhileRevalidate.mjs'
+import { registerRoute } from "workbox-routing/registerRoute.mjs";
+import { StaleWhileRevalidate } from "workbox-strategies/StaleWhileRevalidate.mjs";
 
-registerRoute(/\.(?:js|css)$/, new StaleWhileRevalidate())
+registerRoute(/\.(?:js|css)$/, new StaleWhileRevalidate());

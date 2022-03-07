@@ -6,45 +6,46 @@ import React, { useEffect } from "react";
 import { render } from "react-dom";
 
 const sendSize = (worker) => (canvas) => () => {
-
-worker.postMessage({ type: 'size', width: canas.clientWidth, height: canvas.clientHeight })
-}
-
+  worker.postMessage({
+    type: "size",
+    width: canvas.clientWidth,
+    height: canvas.clientHeight,
+  });
+};
 
 const App = () => {
-	useEffect(() => {
-  const worker = new Worker("./renderer.js");
+  useEffect(() => {
+    const worker = new Worker("./renderer.js");
 
-  // worker.postMessage('yo')
-  //
+    // worker.postMessage('yo')
+    //
 
-const canvas = document.querySelector("#canvas1");
-	if (!canvas.transferControlToOffscreen) {
-		// no support for offscreen canvas
-		return
-		}
+    const canvas = document.querySelector("#canvas1");
+    if (!canvas.transferControlToOffscreen) {
+      // no support for offscreen canvas
+      return;
+    }
 
+    try {
+      const offscreen = canvas.transferControlToOffscreen();
+      worker.postMessage({ type: "main", canvas: offscreen, msg: "yo" }, [
+        offscreen,
+      ]);
+    } catch (err) {
+      console.error(err);
+      return;
+    }
 
-try {
-  const offscreen = canvas.transferControlToOffscreen();
-			worker.postMessage({ type: "main", canvas: offscreen, msg: 'yo' }, [offscreen]);
-
-		} catch (err) {
-	console.error(err)
-	return
-		}
-
-
-	sendSize(worker)(canvas)
-return function cleanup() {
-
-		}
-	})
+    sendSize(worker)(canvas);
+    return function cleanup() {
+      worker.terminate();
+    };
+  });
 
   return (
-		<div style={{ border: '2px solid hsla(170, 20%, 20%, .5)' }}>
+    <div style={{ border: "2px solid hsla(170, 20%, 20%, .5)" }}>
       <canvas id="canvas1"></canvas>
-			cnavas
+      cnavas
     </div>
   );
 };
