@@ -28,6 +28,6 @@ Please fork if you want to help or just try on your own. Many fixes will be requ
 
 I am looking at 70ms frames due to rendering and sampling image data (`getImageData`) so moving it off the main thread would allow the UI to be smooth even if its slow to render.
 
-Eventually would like to abstract the renderer to be all message based. Then we can run other renderers that can possibly use web assembly, webgpu, vulcan empowered renderers.
+Eventually would like to abstract the renderer to be all message based. Then we can run other renderers that can possibly use web assembly, webgpu, vulkan empowered renderers.
 
 Note: Browser support is limited for offscreen canvas. Chrome specifically supports it but many others don't at this time.
