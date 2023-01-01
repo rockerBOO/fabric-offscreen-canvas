@@ -3117,12 +3117,12 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-core_d@^1.0.1:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/core_d/-/core_d-1.1.0.tgz#76649627b1d43996dcc152e1628c1bd15381f57d"
-  integrity sha512-7soFrEC9BhEZVNhxV7lf+oF1zrI+BjeUg1uKjzmBUyBTK+GRYK08UuwP32t34ivN/p9kwzCFOevM2i6xcnoo9Q==
+core_d@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/core_d/-/core_d-3.2.0.tgz#c4cbed5b69684d04a6b5f880935be1659601151c"
+  integrity sha512-waKkgHU2P19huhuMjCqCDWTYjxCIHoB+nnYjI7pVMUOC1giWxMNDrXkPw9QjWY+PWCFm49bD3wA/J+c7BGZ+og==
   dependencies:
-    supports-color "^5.5.0"
+    supports-color "^8.1.0"
 
 cosmiconfig@^7.0.0:
   version "7.0.1"
@@ -6700,21 +6700,21 @@ prettier@2.8.0:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.0.tgz#c7df58393c9ba77d6fba3921ae01faf994fb9dc9"
   integrity sha512-9Lmg8hTFZKG0Asr/kW9Bp8tJjRVluO8EJQVfY2T7FMw9T5jy4I/Uvx0Rca/XWf50QQ1/SS48+6IJWnrb+2yemA==
 
-prettier@^1.19.1:
-  version "1.19.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
-  integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
+prettier@^2.2.1:
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.1.tgz#4e1fd11c34e2421bc1da9aea9bd8127cd0a35efc"
+  integrity sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==
 
-prettier_d_slim@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/prettier_d_slim/-/prettier_d_slim-1.0.0.tgz#a2f4691f4d14b45bb22fefdefe566d562210b740"
-  integrity sha512-XMnrGBOw0CVofX6LvuSFepJ86Zz5Zn9bHo6h6uWVLGjdqZtJ+MyXZxIjqxsrlMU12HORNu7vDbdM93f0zwlEBw==
+prettier_d_slim@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/prettier_d_slim/-/prettier_d_slim-1.2.0.tgz#95bbc2ba83595858315871be9edf64a8581288de"
+  integrity sha512-Wq/Qida9MweJX7dKjlNeJ9Ppfeu4YPWY2947x1xev2RXjimvv2QOBRQJhGAir/QZ+WJnrU82e9O67Uqu8JgbZw==
   dependencies:
     camelize "^1.0.0"
-    core_d "^1.0.1"
+    core_d "^3.2.0"
     minimist "^1.2.0"
     nanolru "^1.0.0"
-    prettier "^1.19.1"
+    prettier "^2.2.1"
     resolve "^1.8.1"
 
 pretty-error@^4.0.0:
@@ -7816,7 +7816,7 @@ supports-color@^7.0.0, supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-supports-color@^8.0.0:
+supports-color@^8.0.0, supports-color@^8.1.0:
   version "8.1.1"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-8.1.1.tgz#cd6fc17e28500cff56c1b86c0a7fd4a54a73005c"
   integrity sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==
